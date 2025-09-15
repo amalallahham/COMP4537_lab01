@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Tektur:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="container h-100 my-5">
+      <div class="d-flex justify-content-between align-items-center flex-wrap">
+        <h1 id="titleText"></h1>
+
+        <div class="d-flex align-items-center gap-3">
+          <div id="lastSavedWrapper" class="d-flex gap-2 align-items-center">
+            <p id="lastSavedLabel" class="mb-0 text-muted"></p>
+            <p id="lastSaved" class="mb-0">—</p>
+          </div>
+
+          <button class="btn btn-primary btn-lg" id="addNoteBtn">
+            <i class="bi bi-plus-lg"></i>
+            <span class="d-md-inline" id="add-btn-text"></span>
+          </button>
+        </div>
+      </div>
+
+      <div>
+        <div class="card shadow-sm my-4 d-none" id="noteCard">
+          <div class="card-body">
+            <div class="mb-3">
+              <label for="note-text" class="form-label"></label>
+              <textarea
+                id="note-text"
+                class="form-control"
+                required
+                rows="4"
+                placeholder="Start writing..."
+              ></textarea>
+            </div>
+
+            <div class="d-flex gap-2 justify-content-end">
+              <button
+                type="button"
+                class="btn btn-outline-secondary btn-lg note-cancel"
+              ></button>
+              <button
+                type="button"
+                class="btn btn-success btn-lg note-save"
+              ></button>
+            </div>
+          </div>
+        </div>
+
+        <ul id="notesList" class="ps-0 my-2"></ul>
+
+        <div
+          class="border-1 justify-content-center align-items-center mt-5"
+          id="placeholder"
+        >
+          <p class="text-muted text-center"></p>
+        </div>
+      </div>
+
+      <div
+        class="d-flex align-items-start justify-content-start flex-wrap mb-4"
+      >
+        <a
+          href="index.html"
+          id="backButton"
+          class="btn btn-outline-secondary"
+        ></a>
+      </div>
+    </div>
+
+    <script src="lang/messages/en/user.js"></script>
+    <script src="js/writer.js" defer></script>
+  </body>
+</html>

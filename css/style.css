@@ -1,0 +1,49 @@
+body {
+  font-family: "Tektur", sans-serif;
+  background-color: #f0f2f5 !important;
+  height: 100vh;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1,
+button,
+span {
+  font-family: "Epunda Slab", serif !important;
+  font-weight: 700;
+}
+
+p,
+label {
+  font-family: "Tektur", sans-serif !important;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  min-width: 30rem;
+  min-height: 10rem;
+
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card i {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.bi-pencil::before {
+  color: #0d6efd;
+}
+
+.bi-book::before {
+  color: #d63384;
+}
